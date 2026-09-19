@@ -1,0 +1,17 @@
+/* Mobile member switching: compact entry, full-width bottom sheet. */
+.member-entry{margin-left:auto;flex:0 0 auto;display:flex;align-items:center;gap:8px;border:0;padding:3px;background:transparent;border-radius:30px;min-height:54px;color:inherit}.member-entry img{display:block;width:48px;height:48px;object-fit:cover;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px #ccd8bc}.member-entry>span{font-size:13px;font-weight:600;padding-right:4px}body.members-open{overflow:hidden}
+#member-sheet{position:fixed;inset:auto 0 0;margin:0 auto;width:100%;max-width:560px;max-height:88dvh;border:0;border-radius:28px 28px 0 0;padding:28px 20px max(24px,env(safe-area-inset-bottom));background:#f3f5f2;overscroll-behavior:contain;box-shadow:0 -16px 70px #20262320;color:#202623}#member-sheet[open]{animation:members-arrive .24s cubic-bezier(.2,.8,.2,1)}#member-sheet::backdrop{background:#20262370;backdrop-filter:blur(4px)}.member-sheet-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:24px}.member-eyebrow{font-size:10px;letter-spacing:2px;color:#64755b;margin:0 0 9px}#member-title{font-size:30px;letter-spacing:-1px;font-weight:600;outline-offset:5px;margin:0}#member-description{font-size:13px;color:#65715f;margin:9px 0 0}#member-close{flex:0 0 44px;width:44px;height:44px;border:0;border-radius:50%;display:grid;place-items:center;background:#e5ebdf;color:inherit}#member-close svg{width:20px;height:20px}.member-list{display:grid;gap:10px}.member-choice{display:grid;grid-template-columns:64px minmax(0,1fr) 54px;align-items:center;gap:14px;min-height:108px;width:100%;text-align:left;background:#fff;border:1px solid #e5e9e3;border-radius:21px;padding:15px 14px;color:inherit}.member-choice[aria-pressed=true]{background:#eaf0e5;border-color:#b4c78e}.member-choice img{width:64px;height:64px;border-radius:19px;object-fit:cover;display:block}.member-copy{display:grid;gap:4px;min-width:0}.member-copy strong{font-size:18px;font-weight:600}.member-role{font-size:14px;line-height:1.4;color:#43523d}.member-copy small{font-size:12px;color:#64715e;margin-top:3px}.member-current{display:flex;align-items:center;flex-direction:column;gap:6px;font-size:10px;color:#43523d;white-space:nowrap}.member-current svg{width:27px;height:27px;padding:5px;border-radius:50%;background:#def77c}.member-choice:active{transform:scale(.985)}@keyframes members-arrive{from{transform:translateY(32px);opacity:0}to{transform:translateY(0);opacity:1}}
+@media(max-width:360px){header{gap:8px}.brand{width:39px;height:39px;flex-shrink:0}.member-entry{gap:4px}.member-entry>span{font-size:12px;padding-right:0}.greeting small{letter-spacing:1px}.member-choice{gap:10px;padding:13px 12px;grid-template-columns:64px minmax(0,1fr) 48px}#member-sheet{padding-left:16px;padding-right:16px}}@media(prefers-reduced-motion:reduce){#member-sheet[open]{animation:none}.member-choice:active{transform:none}}
+
+/* Keep the crew switcher readable and tappable while letting it breathe with the phone width. */
+.member-entry{
+  min-height:48px;
+  gap:clamp(4px,1.8vw,8px);
+  padding:2px;
+}
+.member-entry img{
+  width:clamp(44px,11.8vw,48px);
+  height:clamp(44px,11.8vw,48px);
+}
+.member-entry>span{font-size:clamp(12px,3.25vw,13px);padding-right:clamp(0px,1vw,4px)}
+@media(max-width:360px){.brand{width:clamp(40px,11.5vw,42px);height:clamp(40px,11.5vw,42px)}}

@@ -1,0 +1,25 @@
+/* Daily route hierarchy: lime departure, hollow transfer, black arrival. */
+.route-map .pin-halo {
+  display: none;
+}
+
+.route-map .city-pin.departure .pin-dot,
+.flight-world .departure-airport .airport-pin {
+  fill: #def77c;
+  stroke: #263e20;
+  stroke-width: 2;
+}
+
+.route-map .city-pin.transfer:not(.departure) .pin-dot,
+.flight-world .transfer-airport .airport-pin {
+  fill: #f7fbf2;
+  stroke: #7f9868;
+  stroke-width: 2;
+}
+
+.route-map .city-pin.destination .pin-dot,
+.flight-world .arrival-airport .airport-pin {
+  fill: #263e20;
+  stroke: #263e20;
+  stroke-width: 2;
+}

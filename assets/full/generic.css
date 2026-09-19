@@ -1,0 +1,14 @@
+.generic-journey-art{position:absolute;right:0;top:12%;width:60%;height:85%;pointer-events:none}.generic-journey-art img{width:100%;height:100%;object-fit:contain}.custom-route-map{width:100%;height:auto;border-radius:20px}.route-stations{display:flex;align-items:center;flex-wrap:wrap;gap:14px;padding:24px 0}.route-stations span{display:flex;align-items:center;gap:8px}.route-stations i{font-style:normal;border-radius:50%;background:#def77c;padding:5px 9px}.route-missing{min-height:140px}.offline-card{margin-top:20px}.expense-currencies{grid-template-columns:repeat(auto-fit,minmax(62px,1fr))}.expense-choices.payers,.expense-choices.members{grid-template-columns:repeat(auto-fit,minmax(68px,1fr))}.flight-map-line path{fill:none;stroke:inherit;stroke-width:inherit;stroke-dasharray:inherit}.hotel-cost .hotel-price{flex-shrink:0}.hotel-cost .row{gap:12px}.expense-record{min-width:0}.expense-record>span:first-child{min-width:0;overflow-wrap:anywhere}nav button[hidden]{display:none}nav{grid-auto-columns:1fr;grid-auto-flow:column}.member-entry img{object-fit:cover}.climate-card{flex-shrink:0}.day-title,.greeting span{overflow-wrap:anywhere}
+
+[hidden]{display:none!important}.weather-unavailable{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:15px 0;color:var(--muted,#6c776a);font-size:12px}.weather-unavailable strong{font-size:13px}.day-documents{margin:18px 0;padding:20px}.day-documents summary{display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer}.day-documents summary span{font-size:12px;color:#708069}.document-links{margin-top:14px}.document-links a{display:flex;justify-content:space-between;gap:12px;padding:13px 0;border-top:1px solid #e3e9df;color:#526f31;text-decoration:none;font-size:14px}.document-links b{flex-shrink:0}.trip-overview h2{font-size:22px;line-height:1.4}.trip-overview p{color:#687464;line-height:1.8}.trip-overview .action{margin-top:20px}.context-pin .pin-dot{fill:#eef1e8;stroke:#8d9b80;stroke-width:1.5}.context-label{fill:#8b977f;font-size:15px}.hotel-stay-meta{line-height:1.6}.hotel-icon{font-size:28px}.budget-hero h2{font-size:27px;margin:12px 0}.budget-hero .sub{line-height:1.7}
+.flight-note{grid-column:1/-1;font-size:11px;color:#806e3d;margin:8px 0 0;line-height:1.5}.flight-card>.flight-end:nth-child(3){text-align:right}
+
+/* Long trip and member names must occupy their own header columns. */
+header .greeting{flex:1;min-width:0}
+header .greeting small{display:block;overflow:hidden;text-overflow:ellipsis}
+header .greeting span{white-space:normal;overflow-wrap:anywhere;line-height:1.4}
+header .member-entry{max-width:38%;min-width:44px}
+header .member-entry img{flex-shrink:0}
+header .member-entry>span{min-width:0;overflow-wrap:anywhere;line-height:1.4}
+
+.map-label-leader{fill:none;stroke:#93a286;stroke-width:.7;opacity:.65}.route-map .city-label{font-size:19px}.map-current{flex-wrap:wrap;overflow-wrap:anywhere}

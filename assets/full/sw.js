@@ -1,0 +1,7 @@
+importScripts('offline-files.js');
+const CACHE='handbook-full-v2:'+self.registration.scope;
+const FILES=['./','index.html','trip-data.js','config.js','model.js','store.js','data-adapter.js','world-map.js','debt-model.js','budget-entry.js','full-core.js','presentation.js','full-map.js','full-events.js','style.css','route-map-v2.css','route-illustrations.css','budget-entry.css','member-switcher.css','generic.css','illustrations/default-journey.svg',...Array.from({length:6},(_,i)=>'avatars/default-'+(i+1)+'.svg')];
+self.addEventListener('install',()=>self.skipWaiting());
+self.addEventListener('activate',e=>e.waitUntil(self.clients.claim()));
+self.addEventListener('fetch',e=>{const u=new URL(e.request.url),base=new URL(self.registration.scope);if(e.request.method!=='GET'||u.origin!==base.origin||!u.pathname.startsWith(base.pathname)||u.pathname.startsWith(base.pathname+'api/'))return;e.respondWith(fetch(e.request).then(async r=>{if(r.ok){const c=await caches.open(CACHE);await c.put(e.request,r.clone());}return r;}).catch(async()=>await(await caches.open(CACHE)).match(e.request)||new Response('此资料尚未保存，请联网后打开。',{status:503})));});
+self.addEventListener('message',e=>{if(e.data?.type!=='SAVE')return;e.waitUntil((async()=>{try{const c=await caches.open(CACHE);await c.addAll([...new Set(['./',...(self.HANDBOOK_OFFLINE_FILES||FILES)])]);e.ports[0]?.postMessage({ok:true});}catch{e.ports[0]?.postMessage({ok:false});}})());});

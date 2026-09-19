@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "portraits": [
+    {"file": "portrait-1.webp", "kind": "illustrated-person", "approvedForDefault": true},
+    {"file": "portrait-2.webp", "kind": "illustrated-person", "approvedForDefault": true},
+    {"file": "portrait-3.webp", "kind": "illustrated-person", "approvedForDefault": true},
+    {"file": "portrait-4.webp", "kind": "illustrated-person", "approvedForDefault": true}
+  ],
+  "note": "Stable bundled defaults approved with the Turkey handbook visual baseline. Do not synthesize replacement portraits during generation."
+}

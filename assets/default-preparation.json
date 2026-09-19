@@ -1,0 +1,8 @@
+[
+ {"id":"wear","title":"怎么穿","items":[{"id":"clothes","text":"按沿途天气准备的换洗衣物"},{"id":"layers","text":"适合温差的外搭衣物"},{"id":"underwear","text":"内衣、袜子与睡衣"},{"id":"walking-shoes","text":"舒适步行鞋"},{"id":"laundry","text":"换洗衣物收纳袋"}]},
+ {"id":"power","title":"别断电","items":[{"id":"charger","text":"充电器与充电线"},{"id":"power-bank","text":"充电宝"},{"id":"adapter","text":"按目的地插座准备转换插头"},{"id":"network","text":"电话卡或网络安排"},{"id":"offline-maps","text":"离线地图与重要资料"}]},
+ {"id":"devices","title":"带上设备","items":[{"id":"phone","text":"手机"},{"id":"headphones","text":"耳机"},{"id":"camera","text":"按需准备相机、存储卡与电池"}]},
+ {"id":"documents","title":"出门凭证","items":[{"id":"identity","text":"旅行所需身份证件"},{"id":"entry","text":"按目的地核对入境资料"},{"id":"insurance","text":"旅行保险资料"},{"id":"tickets","text":"交通票据与行李额度"},{"id":"bookings","text":"酒店预订单"},{"id":"payments","text":"支付工具与备用支付方式"},{"id":"contacts","text":"紧急联系人"}]},
+ {"id":"health","title":"照顾好自己","items":[{"id":"medicine","text":"本人日常用药及说明"},{"id":"sun","text":"按天气准备防晒用品"},{"id":"care","text":"基础护理用品"},{"id":"water","text":"随身水杯"}]},
+ {"id":"wash","title":"洗漱收纳","items":[{"id":"toothbrush","text":"牙刷与牙膏"},{"id":"wash","text":"个人洗漱用品"},{"id":"tissues","text":"纸巾"},{"id":"day-bag","text":"随身小包"},{"id":"luggage-tag","text":"行李牌与收纳袋"}]}
+]

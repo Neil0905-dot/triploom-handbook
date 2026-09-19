@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "trip": {
+    "id": "example-trip",
+    "title": "示例旅行（请替换全部资料）",
+    "startDate": "2027-04-18",
+    "endDate": "2027-04-20",
+    "defaultTimeZone": "Asia/Tokyo",
+    "countries": [
+      "JP"
+    ]
+  },
+  "people": [
+    {
+      "id": "member-1",
+      "displayName": "小林"
+    },
+    {
+      "id": "member-2",
+      "displayName": "阿遥"
+    }
+  ],
+  "places": [
+    {
+      "id": "center",
+      "name": "京都市中心",
+      "query": "京都市中心"
+    },
+    {
+      "id": "riverside",
+      "name": "河畔",
+      "query": "京都河畔"
+    }
+  ],
+  "modules": {
+    "today": true,
+    "trip": true,
+    "budget": true,
+    "prepare": true
+  },
+  "days": [
+    {
+      "date": "2027-04-18",
+      "city": "京都",
+      "route": [
+        "出发地",
+        "京都"
+      ],
+      "focus": "抵达后留一些自由时间",
+      "events": [
+        {
+          "id": "walk",
+          "time": "下午",
+          "title": "沿河散步",
+          "detail": "根据抵达时间调整",
+          "status": "flexible",
+          "navigation": {
+            "type": "place",
+            "placeId": "riverside"
+          }
+        }
+      ],
+      "stayId": "hotel-1"
+    },
+    {
+      "date": "2027-04-19",
+      "city": "京都",
+      "route": [
+        "京都",
+        "市郊",
+        "京都"
+      ],
+      "events": [
+        {
+          "id": "explore",
+          "title": "逛当地街区",
+          "navigation": {
+            "type": "place",
+            "placeId": "center"
+          }
+        }
+      ]
+    }
+  ],
+  "flights": [
+    {
+      "id": "outbound",
+      "people": [
+        "member-1",
+        "member-2"
+      ],
+      "code": "",
+      "departureAt": "2027-04-17T23:00:00+08:00",
+      "arrivalAt": "2027-04-18T07:00:00+09:00",
+      "origin": {
+        "city": "上海",
+        "airport": "出发机场待补",
+        "timeZone": "Asia/Shanghai"
+      },
+      "destination": {
+        "city": "京都",
+        "airport": "抵达机场待补",
+        "timeZone": "Asia/Tokyo"
+      },
+      "status": "proposed"
+    }
+  ],
+  "stays": [
+    {
+      "id": "hotel-1",
+      "name": "待选住宿",
+      "city": "京都",
+      "checkIn": "2027-04-18",
+      "checkOut": "2027-04-20",
+      "status": "unbooked"
+    }
+  ],
+  "packingGroups": [
+    {
+      "id": "essentials",
+      "title": "随身物品",
+      "items": [
+        {
+          "id": "passport",
+          "text": "证件"
+        },
+        {
+          "id": "cable",
+          "text": "充电线"
+        }
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "confirm",
+      "text": "核对出发时间"
+    }
+  ],
+  "budget": {
+    "currencies": [
+      {
+        "code": "CNY",
+        "name": "人民币",
+        "symbol": "¥",
+        "rateToCny": 1
+      }
+    ],
+    "items": []
+  }
+}

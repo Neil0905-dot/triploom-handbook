@@ -1,0 +1,5 @@
+interface:
+  display_name: "Triploom 旅行手册"
+  short_description: "根据自己的行程生成四页旅行手册，支持通用素材与可选云端共享"
+  brand_color: "#DEF77C"
+  default_prompt: "使用 $triploom-handbook，根据我的行程生成完整旅行手册，并沿用我选择的云平台发布。"
